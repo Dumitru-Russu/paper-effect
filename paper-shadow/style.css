@@ -1,0 +1,61 @@
+body {
+    background-color: #333;
+}
+
+.paper {
+    width: 700px;
+    margin: 20px auto;
+}
+.paper .clear {
+    clear: both;
+}
+.paper .photo{
+    width: 700px;
+    height: 700px;
+    box-sizing: border-box;
+    border: 20px solid white;
+    background-image: url(https://i.picsum.photos/id/667/700/700.jpg?hmac=EonHryEbMxW-76y8P4sLLAEXWLs-HKR9zqG6ueH1Z1A);
+    
+}
+.paper .gradient {
+    width: 660px;
+    height: 660px;
+    background-image: linear-gradient(
+      90deg, #0008, #fffb, #0008
+    );
+
+}
+.paper .shadow-top-left,
+.paper .shadow-top-right,
+.paper .shadow-bottom-left,
+.paper .shadow-bottom-right{
+    height: 30px;
+    width: 350px;
+    float: left;
+    box-sizing: border-box;
+
+}
+.paper .shadow-top-left {
+    transform:translateY(40px) rotate(3deg);
+    box-shadow: 15px -10px 15px 10px #171717;
+    position: relative;
+    z-index: -1;
+}
+.paper .shadow-top-right {
+    transform:translateY(40px) rotate(-3deg);
+    box-shadow: -15px -10px 15px 10px #171717;
+    position: relative;
+    z-index: -1;
+}
+.paper .shadow-bottom-left {
+    transform:translateY(-40px) rotate(-3deg);
+    box-shadow: 15px 10px 15px 10px #171717;
+    position: relative;
+    z-index: -1;
+}
+.paper .shadow-bottom-right {
+    transform:translateY(-40px) rotate(3deg);
+    box-shadow: -15px 10px 15px 10px #171717;
+    position: relative;
+    z-index: -1;
+}
